@@ -13,15 +13,19 @@ function Review({ setIsOpenComments }: ReviewProps) {
   const [isLiked, setIsLiked] = useState(false);
   const [likes, setLikes] = useState(150);
   const [ratingStars, setRatingStars] = useState(0);
+  const [animate, setAnimate] = useState(false);
 
   const text =
     "Супер сервис! Забронировал дешевле чем обычно и отельеры сами написали мне и море теплое и пиво холодное и обслуживание нормас. приеду еще в это райское место и буду наслаждатся солнышком. Благодарю!";
 
   const shortSurname = surname.slice(0, 8);
 
-  function setLiked() {
+  function setLiked(isLiked: boolean) {
     setIsLiked((prev) => !prev);
     setLikes((prev) => (isLiked ? prev - 1 : prev + 1));
+
+    setAnimate(true);
+    setTimeout(() => setAnimate(false), 500);
   }
 
   function SetRating(index: number) {
@@ -115,8 +119,12 @@ function Review({ setIsOpenComments }: ReviewProps) {
 
           <div className={css.svgPlusText}>
             <div
-              className={clsx(css.svgDivLikes, isLiked && css.svgDivLikeD)}
-              onClick={setLiked}
+              className={clsx(
+                css.svgDivLikes,
+                isLiked && css.svgDivLikeD,
+                animate ? css.active : ""
+              )}
+              onClick={() => setLiked(isLiked)}
             ></div>
             <p className={css.pText}>{likes}</p>
           </div>
