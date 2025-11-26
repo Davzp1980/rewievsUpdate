@@ -40,7 +40,7 @@ function UserReviews() {
             <div className={css.photoDiv}>
               <img
                 className={css.photoUserImg}
-                src="/public/img/Lama.png"
+                src="/img/Lama.png"
                 alt="authors photo"
               />
               <div className={css.karmaDiv}>
@@ -78,13 +78,13 @@ function UserReviews() {
         <div className={css.usersPhotoDiv}>
           <img
             className={css.photoImg}
-            src="/public/img/hotel-small.jpg"
-            alt=""
+            src="/img/hotel-big.png"
+            alt="hotel photo"
           />
           <img
             className={css.photoImg}
-            src="/public/img/hotel-small.jpg"
-            alt=""
+            src="/img/hotel-big.png"
+            alt="hotel photo"
           />
         </div>
 
