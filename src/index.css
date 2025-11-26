@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/fonts/Segoe_UI/SegoeUI-Bold.woff") format("woff");
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/fonts/Segoe_UI/SegoeUI-regular.woff") format("woff");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("/fonts/Segoe_UI/SegoeUI-SemiBold.woff") format("woff");
+
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Mono";
+  src: url("/fonts/PT_Mono/PTMono-Regular.ttf") format("truetype");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Mono";
+  src: url("/fonts/Roboto_Mono/RobotoMono-Bold.ttf") format("truetype");
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --font-family: "Segoe UI", sans-serif;
+  --second-family: "PT Mono", sans-serif;
+  --third-family: "Roboto Mono", sans-serif;
+  --font3: "Roboto", sans-serif;
+}

@@ -1,0 +1,244 @@
+.container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.reviewMainContainer {
+  width: 315px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 14px 17px 21px 14px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.firstDiv {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.namesAndDateDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.nameP {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  color: #656565;
+}
+
+.dateP {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: #656565;
+}
+
+.hotelNameP {
+  cursor: url("/img/cursor.png") 5 5, pointer;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: right;
+  color: #323232;
+}
+
+.photoContainer {
+  position: relative;
+}
+
+.photoDiv {
+  width: 50px;
+  height: 50px;
+}
+
+.karmaDiv {
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  max-width: 50px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.karmaText {
+  max-width: 38px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 121%;
+  color: #787878;
+}
+
+.karmaNumber {
+  align-self: flex-end;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 121%;
+  color: #ff6000;
+}
+
+.raringStarDiv {
+  width: 170px;
+  display: flex;
+  gap: 5px;
+}
+
+.starSvg {
+  width: 30px;
+  height: 30px;
+}
+
+.ratingDiv {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border-radius: 2px;
+  width: 28px;
+  height: 18px;
+  background-color: #fff;
+}
+
+.hotelPhotoDiv {
+  width: 52px;
+  height: 56px;
+}
+
+.ratingNumber {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  color: #0090ff;
+}
+
+.reviewTextP {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 142%;
+  color: #141414;
+  margin-bottom: 18px;
+}
+
+.authorName {
+  max-width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 10px;
+  color: #656565;
+}
+
+.fullTextBtn {
+  padding: 0;
+  display: inline;
+  border: none;
+  background-color: transparent;
+  font-family: var(--font-family);
+  font-size: 11px;
+  font-weight: 600;
+  color: blue;
+}
+
+.smallPhoto {
+  cursor: pointer;
+
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 5px;
+}
+
+.usersPhotoDiv {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.photoImg {
+  border-radius: 12px;
+  width: 248px;
+  height: 161px;
+}
+
+.hotelPhotoDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.commentsAndLikesDiv {
+  margin: 0 auto;
+  width: 200px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.svgPlusText {
+  display: flex;
+  align-items: center;
+}
+
+.svgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+}
+.svgDivLikes {
+  background-image: url("/img/love.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  transition: transform 5000ms linear;
+}
+
+.svgDivLikeD {
+  background-image: url("/img/loveBlue.png");
+}
+
+.svgDivLikes:active {
+  transform: scale(1.2);
+  background-image: url("/img/lovePlus1.png");
+}
+
+.svgDiv:hover,
+.svgDivLikes:hover {
+  background-color: rgba(196, 196, 196, 0.5);
+}
+
+.svg {
+  width: 18px;
+  height: 18px;
+}
+
+.pText {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 10px;
+  color: #4c4c4c;
+}
