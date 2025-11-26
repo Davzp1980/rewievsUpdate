@@ -30,6 +30,7 @@ function ReviewForm({ setIsOpenComments }: ReviewProps) {
 
           <p className={css.lettersCounter}>{textLength}/700</p>
         </div>
+
         <button className={css.submitBtn} type="submit">
           Отправить
         </button>

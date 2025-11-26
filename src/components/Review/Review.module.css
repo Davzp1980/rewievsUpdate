@@ -38,7 +38,7 @@
 }
 
 .hotelNameP {
-  cursor: url("/img/cursor.png") 5 5, pointer;
+  cursor: url("/img/cursorWeb.png") 5 5, pointer;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
@@ -94,6 +94,7 @@
 .starSvg {
   width: 30px;
   height: 30px;
+  cursor: url("/img/cursorWeb.png") 5 5, pointer;
 }
 
 .starSvg:hover {
@@ -155,18 +156,6 @@
   color: blue;
 }
 
-.smallPhoto {
-  cursor: pointer;
-
-  width: 200px;
-  padding: 10px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-
-  gap: 5px;
-}
-
 .usersPhotoDiv {
   width: 100%;
   padding: 0px;
@@ -206,12 +195,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: url("/img/cursorWeb.png") 5 5, pointer;
   border-radius: 50%;
   width: 37px;
   height: 37px;
 }
 .svgDivLikes {
+  cursor: url("/img/cursorWeb.png") 5 5, pointer;
   background-image: url("/img/love.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -228,18 +218,6 @@
 .active {
   animation: scale 0.5s linear;
   background-image: url("/img/lovePlus1.png");
-}
-
-@keyframes scale {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .svgDiv:hover,

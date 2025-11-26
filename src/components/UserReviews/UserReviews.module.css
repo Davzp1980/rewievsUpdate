@@ -38,7 +38,7 @@
 }
 
 .hotelNameP {
-  cursor: pointer;
+  cursor: url("/img/cursorWeb.png") 5 5, pointer;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
@@ -94,6 +94,7 @@
 .starSvg {
   width: 30px;
   height: 30px;
+  cursor: url("/img/cursorWeb.png") 5 5, pointer;
 }
 
 .starSvg:hover {
@@ -215,19 +216,19 @@
   background-image: url("/img/love.png");
   background-repeat: no-repeat;
   background-position: center;
-
   border-radius: 50%;
   width: 37px;
   height: 37px;
-  transition: transform 5000ms linear;
+  transition: transform 500ms;
+  cursor: url("/img/cursorWeb.png") 5 5, pointer;
 }
 
 .svgDivLikeD {
   background-image: url("/img/loveBlue.png");
 }
 
-.svgDivLikes:active {
-  transform: scale(1.2);
+.active {
+  animation: scale 0.5s linear;
   background-image: url("/img/lovePlus1.png");
 }
 
