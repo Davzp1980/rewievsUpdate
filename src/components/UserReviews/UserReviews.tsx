@@ -4,11 +4,11 @@ import { useState } from "react";
 
 const name = "Arnold";
 const surname = "Schwarzenegger";
-const ratingStars = 4;
 
 function UserReviews() {
   const [isLiked, setIsLiked] = useState(false);
   const [likes, setLikes] = useState(150);
+  const [ratingStars, setRatingStars] = useState(0);
 
   const shortSurname = surname.slice(0, 8);
 
@@ -18,6 +18,10 @@ function UserReviews() {
   function setLiked() {
     setIsLiked((prev) => !prev);
     setLikes((prev) => (isLiked ? prev - 1 : prev + 1));
+  }
+
+  function SetRating(index: number) {
+    setRatingStars(index + 1);
   }
 
   return (
@@ -51,14 +55,19 @@ function UserReviews() {
           </div>
 
           <div className={css.raringStarDiv}>
-            {Array.from({ length: ratingStars }).map((_, index) => (
-              <svg className={css.starSvg} key={index}>
-                <use href="/sprite.svg#blurStar"></use>
-              </svg>
-            ))}
-            {Array.from({ length: 5 - ratingStars }).map((_, index) => (
-              <svg className={css.starSvg} key={index}>
-                <use href="/sprite.svg#GrayStar"></use>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <svg
+                className={css.starSvg}
+                key={index}
+                onClick={() => SetRating(index)}
+              >
+                <use
+                  href={
+                    index < ratingStars
+                      ? "/sprite.svg#blurStar"
+                      : "/sprite.svg#GrayStar"
+                  }
+                ></use>
               </svg>
             ))}
           </div>

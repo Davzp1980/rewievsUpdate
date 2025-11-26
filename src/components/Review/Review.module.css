@@ -96,6 +96,11 @@
   height: 30px;
 }
 
+.starSvg:hover {
+  transform: scale(1.2);
+  stroke: #0090ff;
+}
+
 .ratingDiv {
   position: absolute;
   top: 3px;
