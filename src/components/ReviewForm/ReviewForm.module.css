@@ -85,6 +85,12 @@
   color: #fff;
 }
 
+.submitBtn:active {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(0, 144, 255, 0.8);
+  color: #fff;
+}
+
 .downloadLabel {
   display: inline-flex;
   align-items: center;

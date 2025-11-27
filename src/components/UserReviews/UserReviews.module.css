@@ -42,9 +42,16 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 12px;
-  text-decoration: underline;
   text-decoration-skip-ink: none;
   text-align: right;
+  color: #656565;
+}
+
+.hotelNameP:hover {
+  text-decoration: underline;
+}
+
+.hotelNameP:active {
   color: #323232;
 }
 
@@ -234,7 +241,7 @@
 
 .svgDiv:hover,
 .svgDivLikes:hover {
-  background-color: rgba(196, 196, 196, 0.5);
+  background-color: #dae2e9;
 }
 
 .svg {
@@ -242,9 +249,13 @@
   height: 18px;
 }
 
+.svg:active {
+  stroke: red;
+}
+
 .pText {
   font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 10px;
-  color: #4c4c4c;
+  font-weight: 400;
+  font-size: 13px;
+  color: #656565;
 }

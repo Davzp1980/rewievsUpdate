@@ -94,12 +94,12 @@ function Review({ setIsOpenComments }: ReviewProps) {
         <div className={css.usersPhotoDiv}>
           <img
             className={css.photoImg}
-            src="/img/hotel-big.png"
+            src="/img/hotel-big.jpg"
             alt="hotel photo"
           />
           <img
             className={css.photoImg}
-            src="/img/hotel-big.png"
+            src="/img/hotel-big.jpg"
             alt="hotel photo"
           />
         </div>
