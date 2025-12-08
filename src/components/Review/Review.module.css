@@ -4,10 +4,10 @@
 }
 
 .reviewMainContainer {
-  width: 315px;
+  width: 320px;
   margin: 0 auto;
   border-radius: 20px;
-  padding: 14px 17px 21px 14px;
+  padding: 25px 20px 26px 16px;
   border: 1px solid rgba(0, 0, 0, 0.18);
 }
 
@@ -96,18 +96,13 @@
 .raringStarDiv {
   width: 170px;
   display: flex;
+  align-items: center;
   gap: 5px;
 }
 
 .starSvg {
   width: 30px;
   height: 30px;
-  cursor: url("/img/cursorWeb.png") 5 5, pointer;
-}
-
-.starSvg:hover {
-  transform: scale(1.2);
-  stroke: #0090ff;
 }
 
 .ratingDiv {
@@ -136,10 +131,10 @@
 .reviewTextP {
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 12px;
-  line-height: 142%;
+  font-size: 13px;
+  line-height: 131%;
   color: #141414;
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 }
 
 .authorName {
@@ -170,8 +165,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 26px;
+  gap: 4px;
+  margin-bottom: 20px;
 }
 
 .photoImg {
@@ -188,10 +183,11 @@
 
 .commentsAndLikesDiv {
   margin: 0 auto;
-  width: 200px;
+  width: 100%;
   display: flex;
   gap: 50px;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .svgPlusText {

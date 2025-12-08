@@ -1,9 +1,9 @@
 .reviewFormContainer {
   position: relative;
-  width: 315px;
+  width: 320px;
   margin: 0 auto;
 
-  padding: 12px 20px;
+  padding: 20px 19px 24px 18px;
   border: 1px solid rgba(0, 0, 0, 0.18);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.45);
   border-radius: 20px;
@@ -15,7 +15,7 @@
   font-size: 11px;
   text-align: center;
   color: #505050;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .inputDiv {
@@ -26,17 +26,24 @@
 .input {
   width: 100%;
   height: 150px;
+  outline: none;
   resize: none;
   border: none;
   border-radius: 10px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.33);
   padding: 5px 10px 20px;
+
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 142%;
+  color: #141414;
 }
 
 .lettersCounter {
   position: absolute;
-  bottom: 4px;
-  right: 15px;
+  bottom: 17px;
+  right: 10px;
 
   font-family: var(--font-family);
   font-weight: 400;
@@ -46,16 +53,16 @@
 
 .closeBtn {
   position: absolute;
-  top: 10px;
-  right: 5px;
+  top: 5px;
+  left: 10px;
   border: none;
   background-color: transparent;
   cursor: url("/img/cursorWeb.png") 5 5, pointer;
 }
 
 .closeBtnSvg {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 15px;
 }
 
 .submitBtn {
@@ -96,7 +103,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 12px;
+  bottom: 28px;
+  left: 21px;
   cursor: url("/img/cursorWeb.png") 5 5, pointer;
 }
 

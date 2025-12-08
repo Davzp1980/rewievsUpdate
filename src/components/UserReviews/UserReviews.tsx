@@ -8,10 +8,11 @@ const surname = "Schwarzenegger";
 function UserReviews() {
   const [isLiked, setIsLiked] = useState(false);
   const [likes, setLikes] = useState(150);
-  const [ratingStars, setRatingStars] = useState(0);
   const [animate, setAnimate] = useState(false);
 
   const shortSurname = surname.slice(0, 8);
+
+  const blueStar = 4;
 
   const text =
     "Супер сервис! Забронировал дешевле чем обычно и отельеры сами написали мне и море теплое и пиво холодное и обслуживание нормас. приеду еще в это райское место и буду наслаждатся солнышком. Благодарю!";
@@ -22,10 +23,6 @@ function UserReviews() {
 
     setAnimate(true);
     setTimeout(() => setAnimate(false), 500);
-  }
-
-  function SetRating(index: number) {
-    setRatingStars(index + 1);
   }
 
   return (
@@ -59,19 +56,14 @@ function UserReviews() {
           </div>
 
           <div className={css.raringStarDiv}>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <svg
-                className={css.starSvg}
-                key={index}
-                onClick={() => SetRating(index)}
-              >
-                <use
-                  href={
-                    index < ratingStars
-                      ? "/sprite.svg#blurStar"
-                      : "/sprite.svg#GrayStar"
-                  }
-                ></use>
+            {Array.from({ length: blueStar }).map((_, index) => (
+              <svg className={css.starSvg} key={index}>
+                <use href={"/sprite.svg#blurStar"}></use>
+              </svg>
+            ))}
+            {Array.from({ length: 5 - blueStar }).map((_, index) => (
+              <svg className={css.starSvg} key={index}>
+                <use href={"/sprite.svg#GrayStar"}></use>
               </svg>
             ))}
           </div>

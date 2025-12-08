@@ -9,10 +9,12 @@ export type ReviewProps = {
 const name = "Arnold";
 const surname = "Schwarzenegger";
 
+const blueStar = 4;
+
 function Review({ setIsOpenComments }: ReviewProps) {
   const [isLiked, setIsLiked] = useState(false);
   const [likes, setLikes] = useState(150);
-  const [ratingStars, setRatingStars] = useState(0);
+
   const [animate, setAnimate] = useState(false);
 
   const text =
@@ -26,10 +28,6 @@ function Review({ setIsOpenComments }: ReviewProps) {
 
     setAnimate(true);
     setTimeout(() => setAnimate(false), 500);
-  }
-
-  function SetRating(index: number) {
-    setRatingStars(index + 1);
   }
 
   return (
@@ -61,20 +59,16 @@ function Review({ setIsOpenComments }: ReviewProps) {
               </div>
             </div>
           </div>
+
           <div className={css.raringStarDiv}>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <svg
-                className={css.starSvg}
-                key={index}
-                onClick={() => SetRating(index)}
-              >
-                <use
-                  href={
-                    index < ratingStars
-                      ? "/sprite.svg#blurStar"
-                      : "/sprite.svg#GrayStar"
-                  }
-                ></use>
+            {Array.from({ length: blueStar }).map((_, index) => (
+              <svg className={css.starSvg} key={index}>
+                <use href={"/sprite.svg#blurStar"}></use>
+              </svg>
+            ))}
+            {Array.from({ length: 5 - blueStar }).map((_, index) => (
+              <svg className={css.starSvg} key={index}>
+                <use href={"/sprite.svg#GrayStar"}></use>
               </svg>
             ))}
           </div>

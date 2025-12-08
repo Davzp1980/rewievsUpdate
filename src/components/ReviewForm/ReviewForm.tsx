@@ -18,17 +18,17 @@ function ReviewForm({ setIsOpenComments }: ReviewProps) {
   }
   return (
     <div className={css.reviewFormContainer}>
-      <h2 className={css.h2}>Напишите комментарий</h2>
+      <h2 className={css.h2}>Напишите комментарий {textLength}/500</h2>
       <form onSubmit={sendForm}>
         <div className={css.inputDiv}>
           <textarea
             className={css.input}
             name="comment"
-            maxLength={700}
+            maxLength={500}
             onChange={handleChange}
           />
 
-          <p className={css.lettersCounter}>{textLength}/700</p>
+          <p className={css.lettersCounter}>{textLength}/500</p>
         </div>
 
         <button className={css.submitBtn} type="submit">
@@ -41,7 +41,7 @@ function ReviewForm({ setIsOpenComments }: ReviewProps) {
         onClick={() => setIsOpenComments((prev) => !prev)}
       >
         <svg className={css.closeBtnSvg}>
-          <use href="/sprite.svg#close"></use>
+          <use href="/sprite.svg#arrow-left"></use>
         </svg>
       </button>
 
